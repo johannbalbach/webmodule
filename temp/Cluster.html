@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClusterKmeans</title>
+    <link rel="stylesheet" href="ClusterStyle.css">
+    <script src="ClusterJS.js" defer></script>
+</head>
+    <div class="box">
+        <button id="random" class="btn" type="button" onclick="randomUnits()">RANDOM</button>
+        <div id="unit-div" class="slider-container">
+            <input id="n-slider" class="slider" type="range" min="1" max="100" value="30" autocomplete="off">
+            <input id="n-value" class="value" type="text" value="30" autocomplete="off">
+        </div>
+        <button id="start" class="btn" type="button" onclick="sliceOnClusters()">START</button>
+        <div id="kGroups-div" class="slider-container">
+            <input id="k-slider" class="slider" type="range" min="1" max="10" value="3" autocomplete="off">
+            <input id="k-value" class="value" type="text" value="3" autocomplete="off">
+        </div>
+    </div>
+    <center>
+        <div><canvas id="canvas" width="600" height="600"></canvas></div>
+    </center>
+</body>
+</html>

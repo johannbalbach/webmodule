@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A*</title>
+    <link rel="stylesheet" href="AstarStyle.css">
+    <script src="AstarJS.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <div id="display-container">
+            <div id="random-container">
+                <button id="random" class="btn" type="button" onclick="randomMatrix()">RANDOM</button>
+                <div id="unit-div" class="slider-container">
+                    <input id="size-slider" class="slider" type="range" min="1" max="100" value="30" autocomplete="off">
+                    <input id="size-value" class="value" type="text" value="30" autocomplete="off">
+                </div>
+                <div id="unit-div" class="slider-container">
+                    <input id="random-slider" class="slider" type="range" min="0" max="100" value="30" autocomplete="off">
+                    <input id="random-value" class="value" type="text" value="30" autocomplete="off">
+                </div>
+                <button id="maze" class="btn" type="button" onclick="mazeMatrix()">MAZE</button>
+            </div>
+            <div id="color-container">
+                <button id="btn-wall" class="btn-color" type="button" onclick="drawWall()"></button>
+                <button id="btn-space" class="btn-color" type="button" onclick="drawSpace()"></button>
+                <button id="btn-point" class="btn-color" type="button" onclick="drawPoint()"></button>
+            </div>
+            <button class="btn" type="button" onclick="drawPath()">START</button>
+            <button id="btn-erase" class="btn" type="button" onclick="erase()">ERASE</button>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+</body>
+</html>
